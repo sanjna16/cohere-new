@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const LoginPage: NextPage = () => {
-  return <SignInPage />;
+  return <Login />;
 };
 
 export default LoginPage;

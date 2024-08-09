@@ -1,5 +1,6 @@
 'use client';
 
+import { UserButton } from '@clerk/nextjs';
 import cx from 'classnames';
 import Link from 'next/link';
 import React, { PropsWithChildren } from 'react';
@@ -28,6 +29,7 @@ export const NavigationBar: React.FC<PropsWithChildren<{ className?: string }>> 
         </div>
       </Link>
       {children}
+      <UserButton />
     </nav>
   );
 };
