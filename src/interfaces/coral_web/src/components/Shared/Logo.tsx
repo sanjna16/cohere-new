@@ -72,6 +72,6 @@ export const Logo: React.FC<LogoProps> = ({
     //     })}
     //   />
     // </svg>
-    <></>
+    <img src="/images/logo.webp" alt="Logo" className="h-16 w-24" />
   );
 };

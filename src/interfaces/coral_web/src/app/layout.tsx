@@ -28,13 +28,15 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
     //     </CookiesProvider>
     //   </body>
     // </html>
-    <ClerkProvider>
-      <html lang="en">
-        <body>
-          <LayoutProviders authToken={authToken}>{children}</LayoutProviders>
-        </body>
-      </html>
-    </ClerkProvider>
+    <CookiesProvider>
+      <ClerkProvider>
+        <html lang="en">
+          <body>
+            <LayoutProviders authToken={authToken}>{children}</LayoutProviders>
+          </body>
+        </html>
+      </ClerkProvider>
+    </CookiesProvider>
   );
 };
 
